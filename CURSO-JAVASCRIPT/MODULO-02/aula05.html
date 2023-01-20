@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+   
+        function teste(){
+            //executado quando chamar a função
+            console.log('Chamando a fução teste')
+        }
+
+        function teste2(nome, idade){
+            console.log(`O nome passado é: ${nome} e a idade é: ${idade}`)
+        }
+        // chamando uma função
+        teste()
+        teste2('Richard', 26)
+        teste2('Grazi', 23)
+
+        // return é pra quando voce quiser um retorno e encerrar a função
+        function pegarnome(parametro){
+            if(parametro == 1){
+            return 'Richard!!'
+            }else {
+                return 'outro nome!!'
+            }
+        }
+
+        var nome = pegarnome(1)
+
+        console.log(nome)
+
+    </script>
+</body>
+</html>

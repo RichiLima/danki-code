@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pessoa(){
+            //----- A PALAVRA THIS É COMO SE FOSSE UMA VARIAVEL QUE É PARA ESSE OBJETO EM QUESTÃO
+            this.nome = 'Richard';
+            this.idade = 26
+            this.printIdade = function(){
+                alert(this.idade)
+            }
+
+        }
+
+        var pessoa = new pessoa();
+
+        
+        //------instancias
+        function Animal(nome,peso){
+
+            //------USANDO O IF PARA VALIDAR INFORMAÇÕS QUANDO O OBJETO ESTÁ SENDO CRIADO
+            if(nome == undefined){
+                nome = 'cachorro';
+            }
+            if(peso == undefined){
+                peso = '5kg';
+            }
+            this.nome = nome;
+            this.peso = peso;
+        }
+
+        animal = new Animal();
+        /*
+        animal = new Animal ("nina", '7kg');
+        animal2 = new Animal ("boby", '8kg');
+        */
+        alert(animal.nome);
+        
+
+    </script>
+</body>
+</html>

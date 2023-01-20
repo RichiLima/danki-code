@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //-------- Aplicação de calculadiora dinamica
+
+        //-------- Queremos numero inicial
+        //-------- Queremos um sinal (tipo opereção)
+        //-------- Quero um numero final
+
+        var numero1 = prompt('informe o primeiro número...')
+
+        var sinal = prompt('informe o sinal da sua oeração...')
+
+        while(sinal != '-' && sinal != '+' && sinal != '/' && sinal != '*'){52
+            alert('por favor informe um sinal valido')
+
+            sinal = prompt('informe o sinal da sua oeração...')
+        }
+        
+        var numero2 = prompt('informe o segundo número...')
+       
+        //FUNÇÃO PARA CONVERTER UMA STRING EM NUMERO
+        numero1 = parseInt(numero1);
+        numero2 = parseInt(numero2);
+
+        var res = 0;
+        if(sinal == '-'){
+            res = numero1 - numero2;
+        }else if(sinal == '+'){
+            res = numero1 + numero2;
+        }else if(sinal == '/'){
+            res = numero1 / numero2;
+        }else if(sinal =='*'){
+            res = numero1 * numero2;
+        }
+
+        alert(`O resultado final é ${res}`)
+
+
+    </script>
+</body>
+</html>
